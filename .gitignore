@@ -1,0 +1,19 @@
+# Python
+pycache/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+ECHO is on.
+# Node
+node_modules/
+.next/
+.vercel/
+dist/
+build/
+ECHO is on.
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
