@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import ThemeToggle from "@/components/theme-toggle";
@@ -60,19 +61,23 @@ export function PremiumNavigation() {
           {/* Desktop Actions */}
           <div className="hidden md:flex items-center space-x-4">
             <ThemeToggle />
-            <Button
-              variant="ghost"
-              size="sm"
-              className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
-            >
-              Login
-            </Button>
-            <Button
-              size="sm"
-              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white shadow-lg hover:shadow-xl transition-all duration-200"
-            >
-              Sign Up
-            </Button>
+            <Link href="/login">
+              <Button
+                variant="ghost"
+                size="sm"
+                className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
+              >
+                Login
+              </Button>
+            </Link>
+            <Link href="/signup">
+              <Button
+                size="sm"
+                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white shadow-lg hover:shadow-xl transition-all duration-200"
+              >
+                Sign Up
+              </Button>
+            </Link>
             <Button
               variant="outline"
               size="sm"
@@ -122,17 +127,23 @@ export function PremiumNavigation() {
                 </a>
               ))}
               <div className="pt-4 space-y-2">
-                <Button
-                  variant="ghost"
-                  className="w-full justify-start text-gray-700 dark:text-gray-300"
-                >
-                  Login
-                </Button>
-                <Button
-                  className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white"
-                >
-                  Sign Up
-                </Button>
+                <Link href="/login" className="w-full">
+                  <Button
+                    variant="ghost"
+                    className="w-full justify-start text-gray-700 dark:text-gray-300"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Login
+                  </Button>
+                </Link>
+                <Link href="/signup" className="w-full">
+                  <Button
+                    className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Sign Up
+                  </Button>
+                </Link>
                 <Button
                   variant="outline"
                   className="w-full justify-start border-blue-200 dark:border-blue-800 text-blue-600 dark:text-blue-400"

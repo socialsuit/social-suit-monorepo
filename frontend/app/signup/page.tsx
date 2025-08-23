@@ -1,19 +1,19 @@
 "use client"
 
 import { useState } from "react"
-import PremiumLogin from "@/components/premium-login"
+import PremiumSignup from "@/components/premium-signup"
 import DestinationModal from "@/components/destination-modal"
 
-export default function LoginPage() {
+export default function SignupPage() {
   const [showDestinationModal, setShowDestinationModal] = useState(false)
 
-  const handleLoginSuccess = (destination: 'suit-manager' | 'suit-research') => {
+  const handleSignupSuccess = (destination: 'suit-manager' | 'suit-research') => {
     setShowDestinationModal(true)
   }
 
   return (
     <>
-      <PremiumLogin onSuccess={handleLoginSuccess} />
+      <PremiumSignup onSuccess={handleSignupSuccess} />
       <DestinationModal 
         isOpen={showDestinationModal} 
         onClose={() => setShowDestinationModal(false)} 
