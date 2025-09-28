@@ -65,14 +65,10 @@ export default function PremiumSignup({ onSuccess }: PremiumSignupProps) {
         {/* Logo */}
         <div className="text-center mb-8">
           <Link href="/" className="inline-block">
-            <div className="flex items-center justify-center space-x-3">
-              <Image
-                src="/mylogo.jpg"
-                alt="SocialSuit Logo"
-                width={48}
-                height={48}
-                className="rounded-xl object-cover"
-              />
+            <div className="flex items-center justify-center space-x-2">
+              <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl flex items-center justify-center">
+                <span className="text-white font-bold text-lg">S</span>
+              </div>
               <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                 SocialSuit
               </span>

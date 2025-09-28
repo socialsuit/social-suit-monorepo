@@ -1,23 +1,13 @@
-"use client"
-
-import { useState } from "react"
-import PremiumLogin from "@/components/premium-login"
-import DestinationModal from "@/components/destination-modal"
+"use client";
+import AuthSplitScreen from "@/components/ui/AuthSplitScreen";
+import { useRouter } from "next/navigation";
 
 export default function LoginPage() {
-  const [showDestinationModal, setShowDestinationModal] = useState(false)
+  const router = useRouter();
 
-  const handleLoginSuccess = (destination: 'suit-manager' | 'suit-research') => {
-    setShowDestinationModal(true)
-  }
+  const onCloseAction = () => {
+    router.back(); // or router.push("/")
+  };
 
-  return (
-    <>
-      <PremiumLogin onSuccess={handleLoginSuccess} />
-      <DestinationModal 
-        isOpen={showDestinationModal} 
-        onClose={() => setShowDestinationModal(false)} 
-      />
-    </>
-  )
+  return <AuthSplitScreen onCloseAction={onCloseAction} />;
 }

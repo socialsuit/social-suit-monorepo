@@ -25,7 +25,7 @@ import {
 } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
-import ThemeToggle from "@/components/theme-toggle"
+import { ThemeToggle } from "@/components/theme-toggle"
 import { cn } from "@/lib/utils"
 
 interface DashboardHeaderProps {
