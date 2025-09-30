@@ -1,0 +1,80 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#composerGradient)"/>
+  
+  <!-- Main Composer Container -->
+  <rect x="20" y="30" width="360" height="240" rx="12" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+  
+  <!-- Header -->
+  <rect x="30" y="40" width="340" height="35" rx="6" fill="#F8FAFC"/>
+  <text x="40" y="60" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#1E293B">Create New Post</text>
+  
+  <!-- Text Area -->
+  <rect x="40" y="90" width="320" height="80" rx="8" fill="#FAFAFA" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="50" y="110" font-family="Inter, sans-serif" font-size="12" fill="#64748B">What's on your mind?</text>
+  
+  <!-- Typing Animation Lines -->
+  <rect x="50" y="125" width="120" height="2" rx="1" fill="#3B82F6"/>
+  <rect x="50" y="135" width="180" height="2" rx="1" fill="#3B82F6" fill-opacity="0.7"/>
+  <rect x="50" y="145" width="90" height="2" rx="1" fill="#3B82F6" fill-opacity="0.4"/>
+  
+  <!-- Character Counter -->
+  <text x="310" y="160" font-family="Inter, sans-serif" font-size="10" fill="#64748B">280/280</text>
+  
+  <!-- Platform Selection -->
+  <rect x="40" y="185" width="320" height="40" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="50" y="200" font-family="Inter, sans-serif" font-size="10" fill="#64748B">Publish to:</text>
+  
+  <!-- Platform Toggles -->
+  <rect x="50" y="208" width="40" height="12" rx="6" fill="#3B82F6"/>
+  <circle cx="56" cy="214" r="4" fill="white"/>
+  <text x="95" y="217" font-family="Inter, sans-serif" font-size="9" fill="#1E293B">Twitter</text>
+  
+  <rect x="140" y="208" width="40" height="12" rx="6" fill="#E2E8F0"/>
+  <circle cx="174" cy="214" r="4" fill="white"/>
+  <text x="185" y="217" font-family="Inter, sans-serif" font-size="9" fill="#64748B">Facebook</text>
+  
+  <rect x="240" y="208" width="40" height="12" rx="6" fill="#3B82F6"/>
+  <circle cx="246" cy="214" r="4" fill="white"/>
+  <text x="285" y="217" font-family="Inter, sans-serif" font-size="9" fill="#1E293B">LinkedIn</text>
+  
+  <!-- Action Buttons -->
+  <rect x="40" y="240" width="80" height="25" rx="6" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="70" y="255" font-family="Inter, sans-serif" font-size="11" fill="#64748B" text-anchor="middle">Save Draft</text>
+  
+  <rect x="130" y="240" width="60" height="25" rx="6" fill="#F59E0B"/>
+  <text x="160" y="255" font-family="Inter, sans-serif" font-size="11" fill="white" text-anchor="middle">Schedule</text>
+  
+  <rect x="200" y="240" width="60" height="25" rx="6" fill="#3B82F6"/>
+  <text x="230" y="255" font-family="Inter, sans-serif" font-size="11" fill="white" text-anchor="middle">Publish</text>
+  
+  <!-- Media Upload Area -->
+  <rect x="270" y="240" width="80" height="25" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="310" y="255" font-family="Inter, sans-serif" font-size="10" fill="#64748B" text-anchor="middle">+ Add Media</text>
+  
+  <!-- AI Assistant Icon -->
+  <circle cx="350" cy="100" r="15" fill="url(#aiGradient)"/>
+  <path d="M345 95 L350 100 L355 95 M345 105 L350 100 L355 105" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Floating AI Suggestions -->
+  <rect x="280" y="80" width="90" height="30" rx="8" fill="white" stroke="#3B82F6" stroke-width="1" fill-opacity="0.95"/>
+  <text x="290" y="92" font-family="Inter, sans-serif" font-size="8" fill="#3B82F6">AI Suggestion</text>
+  <text x="290" y="102" font-family="Inter, sans-serif" font-size="9" fill="#1E293B">"Add trending hashtags?"</text>
+  
+  <!-- Decorative Elements -->
+  <circle cx="60" cy="20" r="3" fill="#3B82F6" fill-opacity="0.3"/>
+  <circle cx="80" cy="15" r="2" fill="#22C55E" fill-opacity="0.4"/>
+  <circle cx="100" cy="25" r="4" fill="#F59E0B" fill-opacity="0.3"/>
+  
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="composerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FEF3C7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FDE68A;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="aiGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+</svg>
